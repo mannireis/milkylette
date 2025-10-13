@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://6m3n7olvl6ph"]
+
+[ext_resource type="Script" uid="uid://brjm0a0v60t4h" path="res://player/scripts/player.gd" id="1_rkbax"]
+[ext_resource type="Texture2D" uid="uid://bbfj8fdq7vgdf" path="res://assets/art_atlas.png" id="2_rkbax"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_oul6g"]
+size = Vector2(4, 4)
+
+[node name="player" type="CharacterBody2D"]
+script = ExtResource("1_rkbax")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_oul6g")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_rkbax")
+hframes = 17
+vframes = 5
+frame = 51
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(9, 9)
+position_smoothing_enabled = true
