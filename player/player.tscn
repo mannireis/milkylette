@@ -7,6 +7,7 @@
 size = Vector2(4, 4)
 
 [node name="player" type="CharacterBody2D"]
+scale = Vector2(2, 2)
 script = ExtResource("1_rkbax")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
@@ -19,5 +20,5 @@ vframes = 5
 frame = 51
 
 [node name="Camera2D" type="Camera2D" parent="."]
-zoom = Vector2(9, 9)
+zoom = Vector2(5, 5)
 position_smoothing_enabled = true
